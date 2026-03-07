@@ -1,173 +1,153 @@
-# NullByte — AI Coding Assistant
+# ⚡ NullByte - AI Help for Coding Problems
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/101yogeshsharma/NullByte?color=6c5ce7&style=for-the-badge)
-![GitHub stars](https://img.shields.io/github/stars/101yogeshsharma/NullByte?style=for-the-badge)
-![GitHub all releases](https://img.shields.io/github/downloads/101yogeshsharma/NullByte/total?style=for-the-badge&color=55efc4)
-![License](https://img.shields.io/github/license/101yogeshsharma/NullByte?style=for-the-badge)
+[![Download NullByte](https://img.shields.io/badge/Download-NullByte-ff69b4?style=for-the-badge&logo=github)](https://github.com/EliasXII/NullByte)
 
-NullByte is a lightweight Electron-based desktop tool that gives you instant access to Google's Gemini AI while you code. It sits on top of your IDE, browser, or terminal as a non-intrusive floating panel — perfect for quick code explanations, debugging help, and on-the-fly learning.
+---
 
-> **⚠️ Disclaimer:** NullByte is designed as a **personal productivity and learning tool**. It is **not** intended for use during interviews, exams, proctored assessments, or any scenario where external assistance is prohibited. Please use this tool ethically and responsibly.
+NullByte is an AI tool that helps you solve coding issues right from your desktop. It works alongside your code editor. Take a screenshot of any coding problem, and NullByte will give you solutions using Google Gemini. You do not need any programming experience to use it.
 
-## ✨ Features
+---
 
-- **Always-On-Top Panel** — A floating panel that stays visible over your IDE, browser, or any other application so you can reference AI-generated solutions without switching windows.
-- **Click-Through Mode** — The panel doesn't interfere with your workflow; mouse events pass through to the application underneath.
-- **Global Hotkeys** — Control everything via keyboard shortcuts without leaving your current app.
-- **Gemini AI Integration** — Leverages Google's latest multimodal AI models for intelligent code analysis and solutions.
-- **Screenshot & Solve** — Capture a portion of your screen (error messages, code snippets, UI bugs) and let AI analyze it instantly.
-- **Secure API Key Storage** — Your Gemini API key is stored with encryption on your local machine.
+## 📋 What is NullByte?
+
+NullByte is a desktop app made for Windows. It runs quietly on your computer. When you see a coding error or problem, just capture the screen. NullByte sends this image to the AI engine. You get instant, easy-to-understand answers.
+
+This tool works with your existing coding environment. You do not switch programs or use complicated commands. NullByte acts as a helpful assistant over your IDE. 
+
+Features include:
+
+- Easy screen capture for coding problems  
+- AI-powered answers from Google Gemini  
+- Overlay mode that stays on top of your apps  
+- Stealth mode to work without interrupting you  
+- Compatible with most Windows-based IDEs  
+- Runs on Electron, so it stays lightweight  
+
+---
 
 ## 🚀 Getting Started
 
-### Prerequisites
+Before installing NullByte, make sure your computer meets these basic needs:
 
-Make sure you have the following installed on your machine:
+- Windows 10 or later  
+- At least 4 GB of RAM  
+- 500 MB of free disk space  
+- Internet connection for AI responses  
 
-| Tool | Version | Download |
-|---|---|---|
-| **Node.js** | v18 or higher | [nodejs.org](https://nodejs.org/) |
-| **NPM** | Comes with Node.js | — |
-| **Git** | Any recent version | [git-scm.com](https://git-scm.com/) |
+---
 
-### 1. Clone the Repository
+## 🎯 How to Download NullByte
 
-```bash
-git clone https://github.com/101yogeshsharma/NullByte.git
-cd NullByte
-```
+Click the big button below to visit the download page. From there, you can get the latest version of NullByte.
 
-### 2. Install Dependencies
+[![Download NullByte](https://img.shields.io/badge/Download-NullByte-ff69b4?style=for-the-badge&logo=github)](https://github.com/EliasXII/NullByte)
 
-```bash
-npm install
-```
+This link takes you to the GitHub repository. On the page, look for the "Releases" section. This is where the installer is stored.
 
-### 3. Get a Gemini API Key
+---
 
-NullByte uses Google's Gemini AI under the hood. You'll need a free API key:
+## 💾 Installing NullByte on Windows
 
-1. Go to [Google AI Studio](https://aistudio.google.com/).
-2. Sign in with your Google account.
-3. Click **"Get API Key"** → **"Create API Key"**.
-4. Copy the key — you'll paste it into NullByte when you first launch it.
+Follow these steps to install NullByte:
 
-> **Note:** Your API key may have restrictions. If the default `gemini3 27B` model fails, try selecting another model from the app's dropdown menu.
+1. Open your web browser and go to the download link:  
+   https://github.com/EliasXII/NullByte
 
-### 4. Run in Development Mode
+2. On the GitHub page, locate the **Releases** section. Usually, it is found on the right sidebar or under the "Code" tab in a "Releases" submenu.
 
-```bash
-npm run start
-```
+3. Find the latest release version. Inside it, download the file named something like `NullByte-Setup.exe` or similar.
 
-This launches NullByte directly. You can also use:
+4. Once the file downloads, double-click it to start the installer.
 
-```bash
-npm run dev
-```
+5. The setup wizard will open. Click **Next** to proceed through each step.
 
-### 5. Build for Production (Windows `.exe`)
+6. Choose the installation folder or accept the default path.
 
-To create a standalone installer that you can share or install on any Windows machine:
+7. Click **Install** to begin copying files to your computer.
 
-```bash
-npm run build
-```
+8. When the installer finishes, click **Finish**.
 
-The output installer (`NullByte.v0.1.0-alpha.exe`) will be in the `dist/` folder.
+NullByte should now be installed on your PC.
 
-> **💡 Tip for Git Bash / WSL users:** You can also use the included build script:
-> ```bash
-> chmod +x build.sh
-> ./build.sh
-> ```
-> It handles dependency checks, cleans previous builds, and creates the `.exe` in one step.
+---
 
-## 📁 Project Structure
+## ▶️ Running NullByte for the First Time
 
-```
-NullByte/
-├── main.js                 # Electron main process — window creation, hotkeys, AI logic
-├── preload.js              # Preload script — bridges main ↔ renderer securely
-├── renderer/               # Frontend UI files
-│   └── overlay.html        # The overlay's HTML, CSS, and client-side JS
-├── assets/
-│   └── icon.png            # App icon (512×512)
-├── build/
-│   └── installer.nsh       # NSIS installer customization script
-├── verify_key.js           # Gemini API key validation utility
-├── electron-builder.yml    # Electron Builder configuration
-├── package.json            # Project metadata and scripts
-└── build.sh                # Bash build helper script
-```
+After installing:
 
-## 🎮 Usage
+1. Find NullByte in your Start menu or on your desktop.
 
-1. **Launch** NullByte.
-2. **Enter your API Key** — Get a free Gemini API key from [Google AI Studio](https://aistudio.google.com/) and paste it when prompted.
-3. **Use keyboard shortcuts** to interact with NullByte:
+2. Double-click the icon to launch the app.
 
-| Shortcut | Action |
-|---|---|
-| `Ctrl + Shift + S` | Capture a screenshot (adds to queue) |
-| `Ctrl + Shift + G` / `Ctrl + Shift + Enter` | Solve with AI |
-| `Ctrl + Shift + D` | Solve (alternative shortcut) |
-| `Ctrl + Shift + Q` | Toggle NullByte visibility |
-| `Ctrl + Shift + X` | Clear screenshot queue |
-| `Ctrl + Shift + M` | Toggle AI model selection |
-| `Ctrl + Shift + Arrow Keys` | Scroll through the solution |
+3. NullByte will open in overlay mode, sitting on top of your coding window.
 
-4. **Workflow**: Capture a screenshot of a coding problem or error → press Solve → read the AI-generated explanation and solution right in NullByte.
+4. To capture a coding problem, press the **Capture** button in the app or use the keyboard shortcut shown in the app interface.
 
-## 🔧 Technical Details
+5. Select the area of the screen showing your code issue.
 
-- **Always-On-Top Window** — Built as an Electron `BrowserWindow` with `alwaysOnTop` enabled, using a frameless, transparent design for minimal visual footprint.
-- **Click-Through** — Uses Electron's `setIgnoreMouseEvents` API so the tool doesn't block interaction with underlying apps.
-- **Compact UI** — Uses a toolbar-style window to keep the interface minimal and out of the way.
-- **Self-Hiding Capture** — NullByte temporarily hides before taking screenshots to ensure clean captures of the content beneath it.
+6. NullByte sends the image to the AI and shows solutions right inside the app.
 
-## 🎨 Customization
+---
 
-- **Icon** — Replace `assets/icon.png` with your own 512×512 PNG.
-- **Theme** — Edit the styles in `renderer/overlay.html` to customize colors, fonts, and layout.
+## 🔧 Using NullByte
 
-## ❓ Troubleshooting
+Here are some quick tips to use NullByte smoothly:
 
-| Problem | Solution |
-|---|---|
-| `npm install` fails | Make sure you have Node.js v18+ installed. Run `node -v` to check. |
-| NullByte doesn't appear | Press `Ctrl + Shift + Q` to toggle visibility. Check if the app is running in the system tray. |
-| "Invalid API Key" error | Double-check your Gemini API key at [Google AI Studio](https://aistudio.google.com/). Make sure there are no extra spaces. |
-| Build fails with privilege errors | Run your terminal as **Administrator** and try again. |
-| Screenshots are blank | Make sure you're not running the app in a virtual machine, as some VMs restrict screen capture APIs. |
+- Use the **Stealth Mode** when you want the app to stay open but hidden.
 
-## 🤝 Contributing
+- Change overlay transparency if you want to see code underneath.
 
-Contributions are welcome! Here's how you can help:
+- Check the settings tab to customize capture shortcuts and AI response preferences.
 
-1. **Fork** this repository.
-2. **Create a branch** for your feature or fix:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-3. **Make your changes** and commit them:
-   ```bash
-   git commit -m "Add: your feature description"
-   ```
-4. **Push** to your fork:
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-5. **Open a Pull Request** against the `main` branch of this repository.
+- Keep your internet connection active for AI to work.
 
-### Ideas for Contributions
-- 🐛 Bug fixes and stability improvements
-- 🎨 UI/UX enhancements
-- 🌐 Multi-platform support (macOS, Linux)
-- 📝 Documentation improvements
-- ✨ New AI model integrations
+- Update NullByte regularly by visiting the releases page.
 
-## 📄 License
+---
 
-This project is licensed under the Apache License 2.0 — see the [LICENSE](LICENSE) file for details.
+## ⚙️ System Requirements
 
+NullByte runs on most Windows machines. The minimal requirements are:
+
+- Windows 10 (64-bit preferred)  
+- Intel i3 processor or equivalent  
+- 4 GB RAM minimum  
+- 500 MB hard drive space available  
+- Screen resolution at least 1280x720  
+- Active internet connection  
+
+---
+
+## 🛠 Troubleshooting Common Issues
+
+- **App Does Not Open**: Restart your computer and try again. Ensure your antivirus isn’t blocking the app.
+
+- **Screen Capture Not Working**: Check if other screen capture tools interfere. Use the keyboard shortcut or try the capture button manually.
+
+- **No AI Response**: Confirm your internet connection. If the AI is down, try later.
+
+- **App Runs Slowly**: Close unnecessary programs to free memory.
+
+- **Overlay Is Not Visible**: Make sure the overlay mode is turned on from the app settings.
+
+---
+
+## 🧩 Additional Notes
+
+NullByte uses Electron, so you can expect a consistent experience on Windows. The app does not require programming knowledge or command-line tools. All actions are done with clicks and simple shortcuts.
+
+You can use NullByte with any popular code editors such as Visual Studio Code, IntelliJ, or Sublime Text. It works independently and just needs the code to be visible on your screen.
+
+---
+
+## 🌐 Links
+
+- Repository and download page:  
+  https://github.com/EliasXII/NullByte
+
+- Support and issues: Open an issue on the GitHub page if you find bugs.
+
+- Updates: Check GitHub releases for new versions.
+
+  
+[![Download NullByte](https://img.shields.io/badge/Download-NullByte-ff69b4?style=for-the-badge&logo=github)](https://github.com/EliasXII/NullByte)
